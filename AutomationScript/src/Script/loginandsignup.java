@@ -1,9 +1,11 @@
 package Script;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
-public class loginandsignup 
+public class loginandsignup {
 @Test
 (dependsOnMethods = {"Launching_the_Browser"})
 public void Signup_for_mobiles() throws InterruptedException
