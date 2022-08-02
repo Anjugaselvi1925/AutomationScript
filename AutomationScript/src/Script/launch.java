@@ -11,6 +11,7 @@ WebDriver driver;
 public void Launching_the_Browser() 
 {
 	System.setProperty("webdriver.chrome.driver","C:\\Users\\anjugaselvi.m\\Downloads\\chromedriver_win32.exe");
+	WebDriverManager.chromedriver().setup();
 	driver = new ChromeDriver();
 	driver.get("https://mobileworld.azurewebsites.net/");
 	driver.manage().window().maximize();
