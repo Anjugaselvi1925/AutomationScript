@@ -1,6 +1,7 @@
 package Script;
 
-public class launch {
+public class launch
+{
 WebDriver driver;
 @Test public void Launching_the_Browser() 
 {
