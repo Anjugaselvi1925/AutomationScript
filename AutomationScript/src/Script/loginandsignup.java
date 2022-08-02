@@ -19,6 +19,9 @@ public void Signup_for_mobiles() throws InterruptedException
 	WebElement Email = driver.findElement(By.xpath("//input[@type='Email']"));
 	Email.sendKeys("anju@gmail.com");
 	WebElement password = driver.findElement(By.xpath("//input[@type='Password']"));
+	password.sendKeys("Anju@1919");
+	WebElement Phone_number = driver.findElement(By.xpath("//input[@type='number']"));
+	Phone_number
 	
 	
 
