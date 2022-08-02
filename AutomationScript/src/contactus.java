@@ -1,6 +1,7 @@
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.AssertJUnit;
 
 public class contactus {
@@ -19,6 +20,8 @@ public class contactus {
 		System.out.println(driver.getTitle());
 		WebElement ele3 = driver.findElement(By.cssSelector("h3[class='title']"));
 		AssertJUnit.assertTrue(ele3.isDisplayed());
+		JavascriptExecutor j = (JavascriptExecutor) driver;
+		j.executeScript("window.scrollBy(0, 550)");
 		
 		
 	}
