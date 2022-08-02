@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Script.Lanuch">
+      <class name="Script.loginandsignup$Login">
         <methods>
           <include name="Launching_the_Browser"/>
+          <include name="Signup_for_mobiles"/>
         </methods>
-      </class> <!-- Script.Lanuch -->
+      </class> <!-- Script.loginandsignup$Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
