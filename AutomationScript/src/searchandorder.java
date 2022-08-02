@@ -1,14 +1,26 @@
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import Script.Lanuch;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class searchandorder {
-	public class search extends Launch
+	public class search extends Lanuch
 	{
+		WebDriverManager.chromedriver().setup();
+        WebDriver driver = new ChromeDriver();
 		@Test
 		(priority = 2)
-		public void search() throws InterruptedException
+	public void search() throws InterruptedException
 		{
 			driver.findElement(By.xpath("//a[.='All Mobiles']")).click();
 			WebElement ele = driver.findElement(By.xpath("//b[.='All Mobile Details']"));
@@ -17,7 +29,7 @@ public class searchandorder {
 			Thread.sleep(2000);
 			JavascriptExecutor j = (JavascriptExecutor) driver;
 			j.executeScript("window.scrollBy(0,700)");
-			Assert.assertTrue(driver.findElement(By.xpath("//h2[='Our New Feature Courses']")).isDisplayed();
+			Assert.assertTrue(driver.findElement(By.xpath("//h2[='Our New Feature Courses']")).isDisplayed() ;
 			driver.findElement(By.xpath("(//a[.='Order'])[4]")).click();
 		}
 		@Test(priority = 3 ) public void Order() throws InterruptedException, Exception
