@@ -1,5 +1,6 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 public class searchandorder {
@@ -37,7 +38,17 @@ public class searchandorder {
 			driver.findElement(By.id("addresss1")).sendKeys("abcdef ghij klmn");
 			driver.findElement(By.id("address2")).sendKeys("abcdefghij klmno pqr");
 			driver.findElement(By.id("inputcity")).sendKeys("Madurai");
+			WebElement dropdown = driver.findElement(By.id("inputState"));
+			Select sle = new Select(dropdown); sle.selectByVisibleText("Tamil Nadu");
+			driver.findElement(By.id("inputZip")).sendKeys("600030");
+			driver.findElement(By.xpath("//*[.='Apple']")).click();
+			driver.findElement(By.cssSelector("input[placeholder='no of mobiles']")).sendKeys("3");
+			WebElement dpdwn2 = driver.findElement(By.id("bought"));
+			Select sle2= new Select(dpdwn2); sle2.selectByValue("0");
+			driver.findElement(By.xpath("//*[@id='gridCheck1']")).click();
+			driver.findElement(By.xpath("//*[@id='gridCheck2']")).click();
+			driver.findElement(By.xpath("//button[@class= 'btn btn-primary']")).click();
 		}
 	}
-
-}
+	
+		}
