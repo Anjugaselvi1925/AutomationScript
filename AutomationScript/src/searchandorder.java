@@ -14,7 +14,7 @@ import Script.Lanuch;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class searchandorder {
-	public class search extends Lanuch
+	public class search extends Launch
 	{
 		WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -29,7 +29,7 @@ public class searchandorder {
 			Thread.sleep(2000);
 			JavascriptExecutor j = (JavascriptExecutor) driver;
 			j.executeScript("window.scrollBy(0,700)");
-			Assert.assertTrue(driver.findElement(By.xpath("//h2[='Our New Feature Courses']")).isDisplayed() ;
+			Assert.assertTrue(driver.findElement(By.xpath("//h2[.='Our New Feature Courses']")).isDisplayed());
 			driver.findElement(By.xpath("(//a[.='Order'])[4]")).click();
 		}
 		@Test(priority = 3 ) public void Order() throws InterruptedException, Exception
