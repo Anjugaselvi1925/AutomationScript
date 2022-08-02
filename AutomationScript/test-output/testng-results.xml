@@ -1,39 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-08-02T18:36:54 IST" name="Default suite" finished-at="2022-08-02T18:36:59 IST" duration-ms="5098">
+  <suite started-at="2022-08-02T22:45:18 IST" name="Default suite" finished-at="2022-08-02T22:45:42 IST" duration-ms="24563">
     <groups>
     </groups>
-    <test started-at="2022-08-02T18:36:54 IST" name="Default test" finished-at="2022-08-02T18:36:59 IST" duration-ms="5098">
+    <test started-at="2022-08-02T22:45:18 IST" name="Default test" finished-at="2022-08-02T22:45:42 IST" duration-ms="24563">
       <class name="Script.loginandsignup$Login">
-        <test-method signature="Launching_the_Browser()[pri:0, instance:Script.loginandsignup$Login@7fee8714]" started-at="2022-08-02T18:36:54 IST" name="Launching_the_Browser" finished-at="2022-08-02T18:36:58 IST" duration-ms="3850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Launching_the_Browser -->
-        <test-method signature="Signup_for_mobiles()[pri:0, instance:Script.loginandsignup$Login@7fee8714]" started-at="2022-08-02T18:36:58 IST" name="Signup_for_mobiles" finished-at="2022-08-02T18:36:59 IST" depends-on-methods="Script.Lanuch.Launching_the_Browser" duration-ms="1204" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="Launching_the_Browser()[pri:0, instance:Script.loginandsignup$Login@7fee8714]" started-at="2022-08-02T22:45:18 IST" name="Launching_the_Browser" finished-at="2022-08-02T22:45:42 IST" duration-ms="24504" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/button[text()='SIGN IN']"}
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'QT-INBG-LT0642', ip: '10.20.29.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+System info: host: 'QT-INBG-LT0642', ip: '192.168.238.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06d88992121d27fda4dce0aa6da35a45, findElement {using=xpath, value=/button[text()='SIGN IN']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANJUGA~1.M\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60875/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 06d88992121d27fda4dce0aa6da35a45]]>
+Command: [71c1e9e4b5c7d6f4569c19535d9f39dd, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANJUGA~1.M\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:61521}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61521/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71c1e9e4b5c7d6f4569c19535d9f39dd]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/button[text()='SIGN IN']"}
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=103.0.5060.134)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'QT-INBG-LT0642', ip: '10.20.29.157', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
+System info: host: 'QT-INBG-LT0642', ip: '192.168.238.140', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [06d88992121d27fda4dce0aa6da35a45, findElement {using=xpath, value=/button[text()='SIGN IN']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANJUGA~1.M\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:60875}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60875/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 06d88992121d27fda4dce0aa6da35a45
+Command: [71c1e9e4b5c7d6f4569c19535d9f39dd, maximizeCurrentWindow {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\ANJUGA~1.M\AppData...}, goog:chromeOptions: {debuggerAddress: localhost:61521}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61521/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71c1e9e4b5c7d6f4569c19535d9f39dd
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,11 +42,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
-at Script.loginandsignup$Login.Signup_for_mobiles(loginandsignup.java:23)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:624)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:628)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:1027)
+at Script.Lanuch.Launching_the_Browser(Lanuch.java:18)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -81,7 +76,39 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Launching_the_Browser -->
+        <test-method signature="Signup_for_mobiles()[pri:0, instance:Script.loginandsignup$Login@7fee8714]" started-at="2022-08-02T22:45:42 IST" name="Signup_for_mobiles" finished-at="2022-08-02T22:45:42 IST" depends-on-methods="Script.Lanuch.Launching_the_Browser" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method loginandsignup$Login.Signup_for_mobiles()[pri:0, instance:Script.loginandsignup$Login@7fee8714] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method loginandsignup$Login.Signup_for_mobiles()[pri:0, instance:Script.loginandsignup$Login@7fee8714] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Signup_for_mobiles -->
