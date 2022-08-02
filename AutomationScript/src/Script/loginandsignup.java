@@ -12,6 +12,8 @@ import com.github.dockerjava.api.model.Driver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class loginandsignup {
+	public class Login extends Lanuch
+	{
 @Test
 (dependsOnMethods = {"Launching_the_Browser"})
 public void Signup_for_mobiles() throws InterruptedException
@@ -48,6 +50,8 @@ public void Signup_for_mobiles() throws InterruptedException
 	driver.findElement(By.xpath("//a[text()='Log In']")).click();
 	
 }
+	}
+}
 	
 
-}
+
