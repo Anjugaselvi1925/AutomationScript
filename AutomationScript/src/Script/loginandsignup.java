@@ -21,7 +21,10 @@ public void Signup_for_mobiles() throws InterruptedException
 	WebElement password = driver.findElement(By.xpath("//input[@type='Password']"));
 	password.sendKeys("Anju@1919");
 	WebElement Phone_number = driver.findElement(By.xpath("//input[@type='number']"));
-	Phone_number
+	Phone_number.sendKeys("8610811865");
+	driver.findElement(By.xpath("//input[@type='radio']")).click();
+	WebElement bio_story = driver.findElement(By.xpath("//textarea[@placeholder='Short Bio']"));
+	bio_story.sendKeys("I joined Qualitest before 2 months");
 	
 	
 
